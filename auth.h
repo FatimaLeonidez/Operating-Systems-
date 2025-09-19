@@ -1,6 +1,7 @@
-#define AUTHENTICATOR_H
 #ifndef AUTHENTICATOR_H
+#define AUTHENTICATOR_H
 #include <string> 
+using namespace std;
 
 class Authenticator{
     public:
