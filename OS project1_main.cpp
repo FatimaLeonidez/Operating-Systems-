@@ -13,7 +13,7 @@ int main(){
         getline(cin, new_username);
         cout << "Enter  password:" << endl;
         getline(cin, new_password);
-        cout << "(8 charatcers minimimum including a lowercase and uppercase letter, number, and special character): " << endl;
+        cout << "(8 charatcers minimimum and must include a lowercase and uppercase letter, number, and special character): " << endl;
             
     }
     else if (choice1 == "log in"){
@@ -30,4 +30,5 @@ int main(){
     }
     
     return 0;
+
 
