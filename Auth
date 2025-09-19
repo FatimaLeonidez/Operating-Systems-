@@ -1,7 +1,9 @@
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
-int authentic(){
-    return 0;
+class auth{
+    public:
+    private:
 }
