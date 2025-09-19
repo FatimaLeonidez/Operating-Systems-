@@ -1,3 +1,3 @@
 # Operating-Systems-
-# Created by: Cecilia Duran, Fatima Leonidez, and Alejandra Rodriguez
-# Project description: 
+Created by: Cecilia Duran, Fatima Leonidez, and Alejandra Rodriguez
+Project description: 
