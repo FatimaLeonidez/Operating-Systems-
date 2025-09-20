@@ -1,28 +1,39 @@
 #include <iostream>
-#include <string>
-#include "auth.h"
+#include <unordered_map>
+#include<string>
+
 using namespace std;
 
-int main(){
-    string newUsername = "";
-    string newPassword = "";
-    string choice1;
+int main() {
 
-    cout << "Powering on..." << endl;
-    cout << "Would you like to log in or sign up?" << endl;
-    getline(cin, choice1);
+	unordered_map<string, string> users = { {"admin", "password123"}};
+	string choice, username, password;
 
-    if (choice1 == "sign up"){
-        sign_up(newUsername, newPassword);
-        log_in(newUsername, newPassword);
-            
-    }
-    else if (choice1 == "log in"){
-        if (newUsername.empty() || newPassword.empty()){
-            cout << "No account fount. Try to sign up ://" << endl;
-        }
-        
-    }
-    
-    return 0;
-}
+	cout << "Would you like to log in or sign up? ";
+	getline(cin, choice);
+
+	if (choice == "log in") {
+		cout << "Enter your username: ";
+		cin >> username;
+		cout << "Enter your password: ";
+		cin >> password;
+		if (users.find(username) != users.end() && users[username] == password) {
+			cout << "Welcome " << username;
+		} 
+		else {
+			cout << "Incorrect username or password.\n";
+		}
+	}
+	else if (choice == "sign up") {
+		cout << "Enter your username: ";
+		cin >> username;
+		cout << "Enter your password: ";
+		cin >> password;
+		users.insert({ username, password });
+	}
+	else {
+		cout << "ERROR!\n";
+	}
+
+	return 0;
+
