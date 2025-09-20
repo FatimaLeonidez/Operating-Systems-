@@ -21,7 +21,12 @@ int main(){
         if (newUsername.empty() || newPassword.empty()){
             cout << "No account fount. Try to sign up ://" << endl;
         }
-        
+        else{
+            log_in(newUsername, newPassword);
+        }
+    }
+    else{
+        cout << "That's not a choice :(" << endl;
     }
     
     return 0;
