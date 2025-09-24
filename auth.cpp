@@ -12,11 +12,11 @@ bool sign_up(string& newUsername, string& newPassword) { //Function to meet the 
     std::cout << "Enter a Password: ";
     getline(cin, newPassword); //Prompts user to enter a password
 
-    if (newPassword.length() < 8) { //
+    if (newPassword.length() < 8) { //Ensures the length of the password is 8 characters or more.
         return false;
     }
 
-    bool NumThere = false;
+    bool NumThere = false; 
     bool SpCharThere = false;
 
     for (char ch : newPassword) {
