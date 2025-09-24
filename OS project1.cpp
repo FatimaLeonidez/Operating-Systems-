@@ -38,39 +38,54 @@ int main() {
     string choice1;
 
     cout << "Powering on..." << endl;
-    cout << "Would you like to log in or sign up?" << endl;
-    getline(cin, choice1);
+    this_thread::sleep_for(chrono::seconds(3));
+    cout << "Booting up..." << endl;
+    this_thread::sleep_for(chrono::seconds(3));
 
-    if (choice1 == "sign up") {
+    do {
+        cout << "Would you like to log in, sign up, or terminate the program?" << endl;
+        cout << "Press 'x' or 'X' to terminate the program." << endl;
+        getline(cin, choice1);
 
-        std::cout << "Success! Redericting you to the sign up page..." << endl;
+        if (choice1 == "sign up") {
 
-        sign_up(newUsername, newPassword);
+            std::cout << "Success! Redirecting you to the sign up page..." << endl;
+            this_thread::sleep_for(chrono::seconds(3));
 
-        if (sign_up(newUsername, newPassword)) {
-            cout << "Account created!" << endl;
+            //sign_up(newUsername, newPassword);
+
+            if (sign_up(newUsername, newPassword)) {
+                cout << "Account created!" << endl;
+            }
+            else {
+                cout << "Try again! Password must be : (8 characters minimimum including \n a lowercase and uppercase letter, number, and special character): " << endl;
+            }
+
         }
-        else {
-            cout << "Try again! Password must be : (8 characters minimimum including \n a lowercase and uppercase letter, number, and special character): " << endl;
-        }
+        else if (choice1 == "log in") {
 
-    }
-    else if (choice1 == "log in") {
+            std::cout << "Welcome, now redirecting to the log in page..." << endl;
+            this_thread::sleep_for(chrono::seconds(3));
 
-        std::cout << "Welcome, now redirecting to the log in page..." << endl;
-
-        log_in(newUsername, newPassword);
-
-        if (newUsername.empty() || newPassword.empty()) {
-            cout << "No account found. Try to sign up ://" << endl;
-        }
-        else {
             log_in(newUsername, newPassword);
+
+            /*if (newUsername.empty() || newPassword.empty()) {
+                cout << "No account found. Try to sign up ://" << endl; This requires more code that we do not have set up yet to store previously created accounts.
+            }
+            else {
+                log_in(newUsername, newPassword); Not needed.
+            }*/
         }
-    }
-    else {
-        cout << "That's not a choice :(" << endl;
-    }
+        else if (choice1 == "x" || choice1 == "X") {
+            break;
+        }
+        else {
+            cout << "Incorrect input. Try again.\n";
+        }
+
+    } while (choice1 != "log in" || choice1 != "sign up");
+
 
     return 0;
 }
+
