@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 #include <cctype>
+#include <thread>
+#include <chrono>
 #include "auth.h" //Connects code to the auth.h file 
 
 using namespace std;
@@ -54,6 +56,7 @@ int main() {
 
     return 0;
 }
+
 
 
 
