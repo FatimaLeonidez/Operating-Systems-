@@ -1,36 +1,56 @@
 #include <iostream>
 #include <string>
+#include <cctype>
 #include "auth.h"
 
 using namespace std;
 
-void sign_up(string& newUsername, string& newPassword){
-    cout << "Enter a username: ";
+bool sign_up(string& newUsername, string& newPassword) {
+    std::cout << "Enter a username: ";
     getline(cin, newUsername);
 
-    cout << "Enter a Password: ";
+    std::cout << "Enter a Password: ";
     getline(cin, newPassword);
 
-    cout << "(8 charatcers minimimum including a lowercase and uppercase letter, number, and special character): " << endl;
-    cout << "Success! Redericting you to the sign up page..." << endl;
+    if (newPassword.length() < 8) {
+        return false;
+    }
+
+    bool NumThere = false;
+    bool SpCharThere = false;
+
+    for (char ch : newPassword) {
+        if (isdigit(ch)) {
+            NumThere = true;
+        }
+        else if (!isalnum(ch)) {
+            SpCharThere = true;
+        }
+
+        if (NumThere && SpCharThere) {
+            return true;
+        }
+    }
+
+    return false;
 
 }
 
-bool log_in(const string& newUsername, const string& newPassword){
+bool log_in(const string& newUsername, const string& newPassword) {
     string username, password;
 
-    cout << "Enter Username";
+    std::cout << "Enter Username: ";
     getline(cin, username);
 
-    cout << "Enter password";
+    std::cout << "Enter password: ";
     getline(cin, password);
 
-    if (username == newUsername && password == newPassword){
-        cout << "Sucess! Welcone..." << endl;
+    if (username == newUsername && password == newPassword) {
+        std::cout << "Success! Welcome..." << endl;
         return true;
     }
-    else{
-        cout << "Wrong username or password >:(" << endl;
+    else {
+        std::cout << "Wrong username or password >:(" << endl;
         return false;
     }
 
