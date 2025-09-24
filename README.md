@@ -1,4 +1,4 @@
-# Project Title: Creating a Basic OS
+<h1> Project Title: Creating a Basic OS </h1>
 Created by: Cecilia Duran, Fatima Leonidez, and Alejandra Rodriguez
 
 Project description: 
