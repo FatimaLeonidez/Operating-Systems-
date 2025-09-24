@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include "Auth.h" //comment: Same thing. Don't worry about this. It's only a name change.
+#include "auth.h" //comment: Same thing. Don't worry about this. It's only a name change.
 
 using namespace std;
 
@@ -61,5 +61,6 @@ int main() {
 
     return 0;
 }
+
 
 
