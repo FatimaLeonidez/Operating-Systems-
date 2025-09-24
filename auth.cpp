@@ -1,18 +1,18 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include "auth.h"
+#include "auth.h" //Connects to the auth.h file
 
 using namespace std;
 
-bool sign_up(string& newUsername, string& newPassword) {
+bool sign_up(string& newUsername, string& newPassword) { //Function to meet the conditions to create a strong password for a username
     std::cout << "Enter a username: ";
-    getline(cin, newUsername);
+    getline(cin, newUsername); //Prompts user to enter a username
 
     std::cout << "Enter a Password: ";
-    getline(cin, newPassword);
+    getline(cin, newPassword); //Prompts user to enter a password
 
-    if (newPassword.length() < 8) {
+    if (newPassword.length() < 8) { //
         return false;
     }
 
