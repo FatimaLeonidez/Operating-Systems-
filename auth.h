@@ -1,10 +1,13 @@
+#pragma once
+#include <iostream>
+#include <unordered_map>
+#include <thread>
+#include <string>
 #ifndef AUTH_H
 #define AUTH_H
 
-#include <string> 
 using namespace std;
 
-void sign_up(string& newUsername, string& newPassword); 
-bool log_in(const string& newUsername, const string& newPassword);
+bool sign_up(string& password); //This function exists to establish the proper conditions to sign up and create an account.
 
 #endif
