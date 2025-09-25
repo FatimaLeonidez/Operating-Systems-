@@ -1,37 +1,33 @@
+#include "auth.h"
 #include <iostream>
 #include <string>
-#include "auth.h"
+#include <cctype>
 
 using namespace std;
 
-void sign_up(string& newUsername, string& newPassword){
-    cout << "Enter a username: ";
-    getline(cin, newUsername);
+bool sign_up(string& password) { //Function to meet the conditions to create a strong password for a username
+    
 
-    cout << "Enter a Password: ";
-    getline(cin, newPassword);
-
-    cout << "(8 charatcers minimimum including a lowercase and uppercase letter, number, and special character): " << endl;
-    cout << "Success! Redericting you to the sign up page..." << endl;
-
-}
-
-bool log_in(const string& newUsername, const string& newPassword){
-    string username, password;
-
-    cout << "Enter Username";
-    getline(cin, username);
-
-    cout << "Enter password";
-    getline(cin, password);
-
-    if (username == newUsername && password == newPassword){
-        cout << "Sucess! Welcone..." << endl;
-        return true;
-    }
-    else{
-        cout << "Wrong username or password >:(" << endl;
+    if (password.length() < 8) { //Ensures the length of the password is 8 characters or more.
         return false;
     }
+
+    bool NumThere = false;
+    bool SpCharThere = false;
+
+    for (char ch : password) {
+        if (isdigit(ch)) {
+            NumThere = true;
+        }
+        else if (!isalnum(ch)) {
+            SpCharThere = true;
+        }
+
+        if (NumThere && SpCharThere) {
+            return true;
+        }
+    }
+
+    return false;
 
 }
