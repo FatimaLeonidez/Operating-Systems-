@@ -50,7 +50,7 @@ bool log_in(const string& newUsername, const string& newPassword) { //Function u
         return true;
     }
     else {
-        std::cout << "Wrong username or password >:(" << endl; //Message to announce an error
+        std::cout << "Wrong username or password" << endl; //Message to announce an error
         return false;
     }
 
