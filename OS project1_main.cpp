@@ -24,14 +24,15 @@ int main() {
 
         if (choice1 == "sign up") { //The "sign up" choice
 
-            std::cout << "Success! Redirecting you to the sign-up page..." << endl; 
+            cout << "Success! Redirecting you to the sign-up page..." << endl; 
             this_thread::sleep_for(chrono::seconds(3)); //3 second pause
+            cout << "Password must have: 8 characters minimum, a lowercase letter, uppercase letter, number, and a special charater." << endl; // Set requirements for a strong password.
 
             if (sign_up(newUsername, newPassword)) {
                 cout << "Account created!" << endl; //Message appears if all user information was entered correctly
             }
             else {
-                cout << "Try again! Password must be : (8 characters minimum including \n a lowercase and uppercase letter, number, and special character): " << endl;
+                cout << "Try again! Password must be : (8 characters minimum including \n a lowercase, uppercase letter, number, and a special character): " << endl;
                 //Message appears if the password is not strong enough
             }
 
