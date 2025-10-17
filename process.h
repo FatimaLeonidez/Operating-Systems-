@@ -24,7 +24,7 @@ private:
 public:
 	Process(int id, int arrival, int burst, int prio, int mem, bool io);
 	int getPID() const{return pid;}
-	int get RemainingTime() const {return remaining_time;}
+	int getRemainingTime() const {return remaining_time;}
 	int getState() const{return state;}
 
 
