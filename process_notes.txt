@@ -48,6 +48,8 @@ remaining_time = running to terminated
 		TURNAROUND TIME:
 
 Output (example):
+"The CPU Scheduling being demonstrated is First Come First Serve (FCFS)."
+
 "Process 1 with ID (##) is NEW at Time 0. Process 2 with ID (##) is NEW at Time 0. Process 3 with ID (##) is NEW at Time 0."
 "Process 1 is now in the READY queue."
 "Process 2 is now in the READY queue."
