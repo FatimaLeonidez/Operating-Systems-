@@ -1,0 +1,5 @@
+Pid1 = Arrival_time(), Burst_time()
+Pid2 = Arrival_time(), Burst_time()
+Pid3 = Arrival_time(), Burst_time()
+
+
