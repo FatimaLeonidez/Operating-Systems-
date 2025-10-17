@@ -8,3 +8,26 @@ For FCFS, priority is given to the one that appears first (No need to consider b
 Waiting_time(formula) = tba
 Turnaround_time(formula) = completion_time - Arrival_time
 
+
+		ales idea numero uno: 
+		[NEW] Process 1: (pid: ##); Arrival Time: 0; CPU Burst Time: 3
+		... (new to ready)
+		... (ready to running)
+		check if i/o is required. 
+			if yes, (running to waiting)
+			if not (running to terminated)
+
+		[NEW] Process 2: (pid: ##); Arrival Time: 0; CPU Burst Time: 2;
+		... (new to ready)
+		... (ready to running)
+		check if i/o is required.
+			if yes, (running to waiting)
+			if not (running to terminated)
+
+
+		[NEW] Process 3: (pid: ##); Arrival Time: 0; CPU Burst Time: 2; 
+		... (new to ready)
+		... (ready to running)
+		check if i/o is required.
+			if yes, (running to waiting)
+			if not (running to terminated)
