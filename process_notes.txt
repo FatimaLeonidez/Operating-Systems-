@@ -2,4 +2,9 @@ Pid1 = Arrival_time(), Burst_time()
 Pid2 = Arrival_time(), Burst_time()
 Pid3 = Arrival_time(), Burst_time()
 
+We're doing First Come First Serve (FCFS).
+For FCFS, priority is given to the one that appears first (No need to consider burst time here).
+
+Waiting_time(formula) = tba
+Turnaround_time(formula) = completion_time - Arrival_time
 
