@@ -20,9 +20,7 @@ remaining_time = running to terminated
 		ales idea numero dos: 
 		[NEW] Process 1: (pid: ##); Arrival Time: 0; CPU Burst Time: 3
 		... (new to ready)
-		REMAINING TIME: 
 		... (ready to running)
-		REMAINING TIME: 
 		check if i/o is required. 
 			if yes, (running to waiting) -- REMAINING TIME: 
 			if not (running to terminated)
@@ -32,9 +30,7 @@ remaining_time = running to terminated
 
 		[NEW] Process 2: (pid: ##); Arrival Time: 0; CPU Burst Time: 2;
 		... (new to ready)
-		REMAINING TIME:
 		... (ready to running)
-		REMAINING TIME:
 		check if i/o is required.
 			if yes, (running to waiting) -- REMAINING TIME:
 			if not (running to terminated)
@@ -44,9 +40,7 @@ remaining_time = running to terminated
 
 		[NEW] Process 3: (pid: ##); Arrival Time: 0; CPU Burst Time: 2; 
 		... (new to ready)
-		REMAINING TIME:
 		... (ready to running)
-		REMAINING TIME:
 		check if i/o is required.
 			if yes, (running to waiting) -- REMAINING TIME:
 			if not (running to terminated)
