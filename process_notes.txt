@@ -47,7 +47,7 @@ remaining_time = running to terminated
 		WAITING TIME: __
 		TURNAROUND TIME:
 
-Output (example):
+***Output (example):
 "The CPU Scheduling being demonstrated is First Come First Serve (FCFS)."
 
 "Process 1 with ID (##) is NEW at Time 0. Process 2 with ID (##) is NEW at Time 0. Process 3 with ID (##) is NEW at Time 0."
