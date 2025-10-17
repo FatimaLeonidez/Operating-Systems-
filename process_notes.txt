@@ -46,3 +46,47 @@ remaining_time = running to terminated
 			if not (running to terminated)
 		WAITING TIME: __
 		TURNAROUND TIME:
+
+Output (example):
+"Process 1 with ID (##) is NEW at Time 0. Process 2 with ID (##) is NEW at Time 0. Process 3 with ID (##) is NEW at Time 0."
+"Process 1 is now in the READY queue."
+"Process 2 is now in the READY queue."
+"Process 3 is now in the READY queue."
+
+"Process 1 is next in the queue."
+"Process 1 is RUNNING..."
+"Start time 0."
+"CPU burst time: 1" 
+"CPU burst time: 2" 
+"CPU burst time: 3" 
+"Process 1 TERMINATED at Time 3."
+"The waiting time was..."
+"The turnaround time was..."
+
+"Process 2 is next in the queue."
+"Process 2 is RUNNING..."
+"Start time 3."
+"CPU burst time: 1" 
+"CPU burst time: 2" 
+"Process 2 TERMINATED at Time 5."
+"The waiting time was..."
+"The turnaround time was..."
+
+"Process 3 is next in the queue."
+"Process 3 is RUNNING..."
+"Start time 5."
+"Press 'x' or 'X' to terminate program (process WAITING for input): "
+//Start loop increment counter with a max of 50(?) iterations to simulate time in seconds.
+"CPU burst time: 1" 
+"CPU burst time: 2" 
+"CPU burst time: ..."
+//Continue until 'x' or 'X' is pressed.
+"Process 3 TERMINATED at Time ...."
+"The waiting time was..."
+"The turnaround time was..."
+
+//Simple test case ends.
+
+
+
+
