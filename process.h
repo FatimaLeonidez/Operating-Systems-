@@ -24,7 +24,7 @@ private:
 
 
 public:
-	Process(int id, int arrival, int burst, int prio, int mem, bool io);
+	Process(int id, int arrival, int burst, int priority, int memory, bool io);
 	void updatedState(ProcessState newState};
 	void executionCycle();
 	int getPID() const{return pid;}
