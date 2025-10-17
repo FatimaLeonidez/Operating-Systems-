@@ -5,6 +5,8 @@
 
 using namespace std;
 
+enum ProcessState{NEW, READY, RUNNING, WAITING, TERMINATED}:
+
 class Process
 {
 
@@ -18,14 +20,15 @@ private:
 	int turnaround_time;
 	int memory_required;
 	bool io_operations;
-	string state;
+	PrcoessState state;
 };
 
 public:
 	Process(int id, int arrival, int burst, int prio, int mem, bool io);
+	void updatedState(ProcessState newState};
 	int getPID() const{return pid;}
 	int getRemainingTime() const {return remaining_time;}
-	int getState() const{return state;}
+	ProcessState getState() const{return state;}
 
 
 #endif
