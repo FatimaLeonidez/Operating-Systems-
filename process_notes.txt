@@ -8,6 +8,12 @@ For FCFS, priority is given to the one that appears first (No need to consider b
 Waiting_time(formula) = tba
 Turnaround_time(formula) = completion_time - Arrival_time
 
+New = Arrival
+Ready = In queue
+Running = On Gantt chart
+Waiting = (maybe) if no termination condition
+Terminated = end
+
 
 		ales idea numero dos: 
 		[NEW] Process 1: (pid: ##); Arrival Time: 0; CPU Burst Time: 3
