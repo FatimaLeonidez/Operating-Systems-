@@ -13,7 +13,7 @@ private:
 	int pid;
 	int arrival_time;
 	int burst_time;
-	int priority;
+	//int priority;
 	int remaining_time;
 	int waiting_time;
 	int turnaround_time;
@@ -23,7 +23,7 @@ private:
 
 
 public:
-	Process(int id, int arrival, int burst, int priority, int memory, bool io);
+	Process(int id, int arrival, int burst, int memory, bool io);
 	void updatedState(ProcessState newState};
 	void executionCycle();
 	int getPID() const{return pid;}
