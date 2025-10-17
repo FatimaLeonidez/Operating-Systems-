@@ -8,12 +8,14 @@ For FCFS, priority is given to the one that appears first (No need to consider b
 Waiting_time(formula) = tba
 Turnaround_time(formula) = completion_time - Arrival_time
 
-New = Arrival
-Ready = In queue
-Running = On Gantt chart
+New = Fetus (can't walk)
+Ready = Arrival (in queue) (first steps? waddling?) 
+Running = On Gantt chart (execution)
 Waiting = (maybe) if no termination condition
 Terminated = end
 
+waiting_time = arrival(or running) - running
+remaining_time = running to terminated
 
 		ales idea numero dos: 
 		[NEW] Process 1: (pid: ##); Arrival Time: 0; CPU Burst Time: 3
