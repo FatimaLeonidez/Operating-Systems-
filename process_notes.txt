@@ -19,7 +19,7 @@ Turnaround_time(formula) = completion_time - Arrival_time
 			if yes, (running to waiting) -- REMAINING TIME: 
 			if not (running to terminated)
 		WAITING TIME: __
-		TURNAROUND TIME: 
+		TURNAROUND TIME:  
 		
 
 		[NEW] Process 2: (pid: ##); Arrival Time: 0; CPU Burst Time: 2;
