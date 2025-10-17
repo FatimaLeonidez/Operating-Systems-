@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class process
+class Process
 {
 public:
 
