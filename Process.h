@@ -7,7 +7,7 @@ using namespace std;
 
 
 enum class ProcessState { // enum class for the different states of a process
-    NEW,
+    NEW, 
     READY,
     RUNNING,
     WAITING,
@@ -29,7 +29,6 @@ public:
 
 
     void execution_cycle();   // takes count of remaining time by decrementing based off of the process' burst time
-    bool is_complete(); // checks if process is complete. if complete, terminate
 
     int get_pid(); // getter to retrieve process id
 
