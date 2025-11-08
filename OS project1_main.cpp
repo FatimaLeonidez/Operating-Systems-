@@ -1,25 +1,23 @@
+#include "Process.h"
+#include "FCFS.h"
 #include <iostream>
-#include <string>
+#include <vector>
 using namespace std;
-//hiiiiiiiii
-int main(){
-    string username, password, new_username, new_password, choice1;
-    cout << "Powering on..." << endl;
-    cout << "Would you like to log in or sign up?" << endl;
-    cin >> choice1;
-    if (choice1 == "log in"){
-        cout << "PLease enter username: " << endl;
-        cin >> username;
-        cout << "Please enter password" << endl;
-        cin >> password;
-        if (username == new_username && password == new_password){
-            cout << "Entering..." << endl;
-        }
-        else{
-            cout << "Wrong >:(" << endl;
-        }
-    }
-    
-    return 0;
 
+int main() {
+    vector<Process> process_list = {
+        Process(1, 0, 10),
+        Process(2, 1, 5),
+        Process(3, 2, 8)
+    };
+
+    FCFS scheduler(process_list);
+
+    cout << "=== FCFS Scheduling Simulation ===\n";
+    scheduler.computeWaitingTimes();
+    scheduler.computeTurnaroundTimes();
+    scheduler.displayTableAndAverages();
+    cout << "=== Simulation Complete ===\n";
+
+    return 0;
 }
