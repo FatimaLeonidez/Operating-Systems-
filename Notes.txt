@@ -1,0 +1,1 @@
+We need the average waiting time for the whole scheduling operation. We also need the average turnaround.
