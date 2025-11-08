@@ -2,7 +2,7 @@
 #include <iostream>
 #include <thread>
 
-void run_Process(Process& p) {
+void run_Process(Process& p) { //This will output the necessary text
     cout << "Process with PID: " << p.get_pid() << " created. Current state: [" << p.display_curr_state() << "]\n";
     this_thread::sleep_for(chrono::seconds(2));
 
@@ -34,7 +34,7 @@ int main() {
     cin >> choice;
 
     switch (choice) {
-    case 1:
+    case 1: // If 1, FCFS will run
         run_Process(process1);
         // process 2 test
         run_Process(process2);
