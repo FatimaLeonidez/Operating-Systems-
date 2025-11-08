@@ -2,23 +2,21 @@
 #ifndef FCFS_H
 #define FCFS_H
 
-#include <vector>
 #include "Process.h"
-#include <queue>
+#include <vector>
 #include <iostream>
-#include <thread>
-#include <chrono>
-
 using namespace std;
 
 class FCFS {
 private:
-	vector<Process> processes;
-public:
-	FCFS(const vector<Process>& proc_list);
+    vector<Process> processes;
 
-	void run();
-	void dusplayResults();
+public:
+    FCFS(const vector<Process>& proc_list);
+
+    void computeWaitingTimes();
+    void computeTurnaroundTimes();
+    void displayTableAndAverages();
 };
 
 #endif
