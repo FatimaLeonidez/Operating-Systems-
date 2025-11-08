@@ -6,7 +6,8 @@
 
 class FCFS {
 public: 
-  void
+  void schedule();
+  void displayResults();
 private:
 };
 
