@@ -2,14 +2,16 @@
 #include <algorithm>
 #include "FCFS.h"
 
+using namespace std;
+
 void FCFS::addProcess(Process* p){
-  queu.puch_back(p);
+  queue.puch_back(p);
 }
 
 void FCFS::schedule(){
-
-for
-}
+  sort(queue.begin(), queue.end(), [](Process* a, Process* b){
+    return a-> getArrivalTime() < b->getArrivalTime();
+});
 
 void FCFS::displayResults(){
   cout<< "\n The FCFS results here:\n";
