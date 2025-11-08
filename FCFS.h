@@ -11,6 +11,8 @@ public:
   void displayResults();
 private:
   vector<Process> queue;
+  double avgWaitingTime = 0.0;
+  double avg_TurnaroundTime = 0.0;
 };
 
 #endif
