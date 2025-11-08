@@ -3,3 +3,11 @@
 
 #include <vector>
 #include <string>
+
+class FCFS {
+public: 
+  void
+private:
+};
+
+#endif
