@@ -7,7 +7,7 @@ using namespace std;
 
 
 enum class ProcessState { // enum class for the different states of a process
-    NEW, 
+    NEW,
     READY,
     RUNNING,
     WAITING,
@@ -23,9 +23,11 @@ private:
     int waiting_time;
     int turnaround_time;
     ProcessState state;
+    int priority; // priority based on number: lower number = higher priority
+
 
 public:
-    Process(int pid, int arrival_time, int burst_time); // constructor for process: its 3 params identify its attributes
+    Process(int pid, int arrival_time, int burst_time, int priority); // constructor for process: its 3 params identify its attributes
 
 
     void execution_cycle();   // takes count of remaining time by decrementing based off of the process' burst time
@@ -41,9 +43,15 @@ public:
 
     int get_turnaround_time(); // calculates and retrieves turnaround time
 
+    void time_calculations(int time_of_completion); // computes turnaround and waiting time 
+
+    int get_priority(); // getter to return priority 
+
     void set_state(ProcessState updated_state); // sets the new state the process is in. 
+    bool is_complete(); // checks if proces is complete 
     ProcessState get_state(); // takes in the current state of the process.
     string display_curr_state(); // prints out current state based on ProcessState.
 };
 
 #endif
+
