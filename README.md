@@ -9,7 +9,7 @@ The following project is meant to demonstrate a simplified operating system. The
   
 There are three files needed to run this program: auth.h, auth.cpp, and OS project1_main.cpp. All three files can be found on the main branch of the GitHub repository. Once all three files are open on a compiler such as Visual Studio, the program can be executed. The user must make sure to add the auth.cpp file and the auth.h file into the Header file folder of their Visual Studio compiler, otherwise the program will not run. A series of lines of text will appear upon execution of the program, prompting the user to enter strings of characters. These strings will represent the options to "log in" or "sign up", the username, the password, or the program termination command. In this manner, we have created a basic operating system capable of authenticating a unique user. </p>
 
-<h2>Scheduling:</h2>h2>
+<h2>Scheduling:</h2>
 Three scheduling algorithms were added to the main portion of the project to simulate the process lifecycle. The chosen three are First Come First Serve (FCFS), Shortest Job First (SJF), and Priority Scheduling.
 
 <h2> Representing a Process in the OS: </h2>
