@@ -4,18 +4,21 @@
 
 #include <vector>
 #include "Process.h"
+#include <queue>
+#include <iostream>
+#include <thread>
+#include <chrono>
 
 using namespace std;
 
 class FCFS {
-public:
-	void addProcess(Process* p);
-	void FCFSschedule();
-	void displayResults();
 private:
-	vector<Process*> queue;
-	double avg_waiting_time = 0.0;
-	double avg_turnaround_time = 0.0;
+	vector<Process> processes;
+public:
+	FCFS(const vector<Process>& proc_list);
+
+	void run();
+	void dusplayResults();
 };
 
 #endif
