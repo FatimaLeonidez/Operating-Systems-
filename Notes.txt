@@ -9,3 +9,7 @@ If yes, write a short 5 word message: _____.
       If yes, txt file saved! Would you like to write another?
 If no, would you like to log out? Y/N
 
+Should access to previously stored files be included?
+Would this require statements detailing how that data is retrieved from the memory?
+
+
