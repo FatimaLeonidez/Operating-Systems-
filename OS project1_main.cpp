@@ -61,9 +61,6 @@ int main() {
 
     } while (!loggedIn && (choice1 != "x" && choice1 != "X"));
 
-    // ============================================
-    // RUN FCFS AUTOMATICALLY AFTER SUCCESSFUL LOGIN
-    // ============================================
     if (loggedIn) {
         cout << "\n=====================================\n";
         cout << " Running FCFS Scheduling Simulation\n";
@@ -85,3 +82,4 @@ int main() {
 
     return 0;
 }
+
