@@ -1,1 +1,11 @@
-We need the average waiting time for the whole scheduling operation. We also need the average turnaround.
+We must combine the scheduling code with the Auth codes, as well as virtual memory.
+
+Ideas for virtual memory:
+Would you like to write a short message in a txt file? Y/N
+
+If yes, write a short 5 word message: _____.
+  Would you like to save the txt file in virtual memory? Y/N
+    If yes, your file will take up 10KB of memory. Proceed? Y/N
+      If yes, txt file saved! Would you like to write another?
+If no, would you like to log out? Y/N
+
