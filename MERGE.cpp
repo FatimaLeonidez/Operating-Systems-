@@ -129,16 +129,14 @@ int main() {
     }
     case 2: {
         //Shortest Job First = Run shortest burst time first
-        for (auto& process : processes) {
-            if (process.get_burst_time() < process.get_burst_time()) {
-                run_Process(process);
-                run_Process(process);
-            }
-            else {
-                run_Process(process);
-                run_Process(process);
-            }
+        sort(processes.begin(), processes.end(),
+            [](Process& a, Process& b) { return a.get_burst_time() < b.get_burst_time(); });
+        for (auto& p : processes) {
+            run_Process(p);
         }
+        double avg_waiting = 0;
+        for (auto& p : processes) avg_waiting += p.get_waiting_time();
+        cout << "Average Waiting Time was " << (avg_waiting / processes.size()) << endl;
         break;
     }
     case 3: {
