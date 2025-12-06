@@ -11,12 +11,12 @@ There are three types of files needed to run this program. They can be divided i
 As the project progressed, new header and cpp files were added to expand the functionality of the Operating System.
 
 The necessary header files are:
-Auth.h
-Process.h
+- Auth.h
+- Process.h
 
 The necessary cpp files are:
-Auth.cpp
-Process.cpp
+- Auth.cpp
+- Process.cpp
 
 The main cpp file that must be run is:
 
