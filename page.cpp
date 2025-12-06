@@ -29,4 +29,4 @@ valid = v;
 void Page::display() const {
 cout << "Page " << pageNumber
 << " | Frame: " << frameNumber
-<< " | Valid: "  << endl;
+<< " | Valid: "  << valid << endl;
