@@ -26,6 +26,9 @@ All files can be found on the main branch of the GitHub repository. Once all fil
 <h2>Project-Part 1:</h2>
 <p>In the earliest stages of the project, three files were created to simulate the functionality of turning on a computer and logging in. The files created for this task were: Auth.h, Auth.cpp, and main.cpp.</p>
 
+![WhatsApp Image 2025-12-06 at 21 19 58_57f679d7](https://github.com/user-attachments/assets/5c88d008-423f-4557-bff1-bc0f7afaf1ff)
+
+
 <h2> Process: </h2>
 <p> To run this program the following files are required: process_main.cpp, Process.h, and Process.cpp, which can be viewed in the main branch of the GitHub repository. The process header file (Process.h) contains the attributes that define a process, getters and setters to obtain some of its attributes, and functions for process behaviors. Additionally, the implementation of the class was stored in its designated C++ file (process.cpp), where the functions were designed to provide the proper functionalities of a Process instance along with its state representation. Lastly, the main process cpp file (main_process.cpp) was designed to simulate and display a Process instance with its set PID, current state, remaining time, waiting time, and its turnaround time.  </p>
 
