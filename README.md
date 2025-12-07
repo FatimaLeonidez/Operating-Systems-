@@ -23,10 +23,10 @@ The main cpp file that must be run is:
 
 All files can be found on the main branch of the GitHub repository. Once all files are open on a compiler such as Visual Studio, the program can be executed. The user must make sure to add the header files to the Header file folder and the cpp files to the Source folder of their Visual Studio compiler; otherwise, the program will not run. </p>
 
+![WhatsApp Image 2025-12-06 at 21 19 58_57f679d7](https://github.com/user-attachments/assets/5c88d008-423f-4557-bff1-bc0f7afaf1ff)
+
 <h2>Project-Part 1:</h2>
 <p>In the earliest stages of the project, three files were created to simulate the functionality of turning on a computer and logging in. The files created for this task were: Auth.h, Auth.cpp, and main.cpp.</p>
-
-![WhatsApp Image 2025-12-06 at 21 19 58_57f679d7](https://github.com/user-attachments/assets/5c88d008-423f-4557-bff1-bc0f7afaf1ff)
 
 
 <h2> Process: </h2>
