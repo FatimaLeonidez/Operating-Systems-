@@ -30,3 +30,4 @@ void Page::display() const {
 cout << "Page " << pageNumber
 << " | Frame: " << frameNumber
 << " | Valid: "  << valid << endl;
+}
