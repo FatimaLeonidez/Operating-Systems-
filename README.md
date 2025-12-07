@@ -13,15 +13,24 @@ As the project progressed, new header and cpp files were added to expand the fun
 The necessary header files are:
 - Auth.h
 - Process.h
+- FCFS.h
+- Page.h
 
 The necessary cpp files are:
 - Auth.cpp
 - Process.cpp
+- FCFS.h
+- Page.cpp
 
 The main cpp file that must be run is:
+- Main.cpp
 
 
-All files can be found on the main branch of the GitHub repository. Once all files are open on a compiler such as Visual Studio, the program can be executed. The user must make sure to add the header files to the Header file folder and the cpp files to the Source folder of their Visual Studio compiler; otherwise, the program will not run. </p>
+All files can be found on the main branch of the GitHub repository. Once all files are open on a compiler such as Visual Studio, the program can be executed. The user must make sure to add the header files to the Header file folder and the cpp files to the Source folder of their Visual Studio compiler; otherwise, the program will not run. For the best results, at the top of the Visual Studio compiler, go to Project and select Add Class. From there, both the header and its corresponding cpp file can be created simultaneously. </p>
+
+<h1>Upon Execution: </h1>
+
+<p>This OS is mainly text-based.</p>
 
 ![WhatsApp Image 2025-12-06 at 21 32 30_03ee338b](https://github.com/user-attachments/assets/3a271ec2-3922-4db8-87da-35711c016dbd)
 
