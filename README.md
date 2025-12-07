@@ -33,6 +33,6 @@ All files can be found on the main branch of the GitHub repository. Once all fil
 <p>Three scheduling algorithms were added to the main portion of the project to simulate the process lifecycle. The chosen three are First Come First Serve (FCFS), Shortest Job First (SJF), and Priority Scheduling. </p>
 
 <h2>Virtual Memory:</h2>
-<p> The virtual memory implemented is a simplified version of what an actual one can do. The virtual memory has a pre-made .txt file to store data instead of requiring user input. Our virtual memory system loads page requests from the pre-made .txt file, checks if each page is already stored in memory, records hits and faults, updates the page table, and then displays the results at the end. </p>
+<p> The virtual memory implementation is a simplified version of what an actual one can do. The virtual memory has a pre-made .txt file to store data instead of requiring user input. Our virtual memory system loads page requests from the pre-made .txt file, checks if each page is already stored in memory, records hits and faults, updates the page table, and then displays the results at the end. </p>
 
 
