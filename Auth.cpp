@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 #include <cctype>
-#include "auth.h" //Connects to the auth.h file
+#include "Auth.h" //Connects to the auth.h file
 
 using namespace std;
 
