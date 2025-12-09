@@ -64,7 +64,7 @@ Relevant submission details:
 </p>
 
 <h2>Virtual Memory:</h2>
-<p> Two additional files were added to implement the functionality of virtual memory: Page.h and Page.cpp. The virtual memory implementation is a simplified version of what an actual one can do. The virtual memory has a pre-made .txt file to store data instead of requiring user input. Our virtual memory system loads page requests from the pre-made .txt file, checks if each page is already stored in memory, records hits and faults, updates the page table, and then displays the results at the end. 
+<p> Two additional files were added to implement the functionality of virtual memory: Page.h and Page.cpp. The virtual memory implementation is a simplified version of what an actual one can do. Our virtual memory system loads page requests from the pre-made .txt file, checks if each page is already stored in memory, records hits and faults, updates the page table, and then displays the results at the end. 
 
 Relevant submission details:
 - Page.h
